@@ -133,14 +133,14 @@
       <div class="sk-row">
         <span class="sk-label">Databases</span>
         <div class="sk-tags">
-          <span class="sk">PostgreSQL</span><span class="sk">MongoDB</span><span class="sk">SQLite</span><span class="sk">Snowflake</span>
+          <span class="sk">PostgreSQL</span><span class="sk">MongoDB</span><span class="sk">SQLite</span>
         </div>
       </div>
 
       <div class="sk-row">
         <span class="sk-label">Tools & DevOps</span>
         <div class="sk-tags">
-          <span class="sk">Git</span><span class="sk">Docker</span><span class="sk">AWS</span><span class="sk">Supabase</span><span class="sk">REST APIs</span><span class="sk">JWT Authentication</span><span class="sk">JUnit</span><span class="sk">Redis</span><span class="sk">Celery</span><span class="sk">Railway</span><span class="sk">Vercel</span>
+          <span class="sk">Git</span><span class="sk">Docker</span><span class="sk">AWS Elastic Beanstalk</span><span class="sk">AWS RDS</span><span class="sk">AWS S3</span><span class="sk">AWS CloudFront</span><span class="sk">Supabase</span><span class="sk">REST APIs</span><span class="sk">JWT Authentication</span><span class="sk">JUnit</span><span class="sk">Redis</span><span class="sk">Celery</span><span class="sk">Railway</span><span class="sk">Vercel</span>
         </div>
       </div>
 
@@ -256,9 +256,9 @@
           <p class="exp-sub-title">COMP 3150 — Database Management Systems</p>
           <p class="exp-sub-date">Jan 2024 — Apr 2024</p>
           <ul>
-            <li>Assisted the course professor in teaching students and solving their problems with regard to course material.</li>
-            <li>Assisted in students' understanding of SQL concepts and offered help for assignments and coursework.</li>
-            <li>Aided in exam proctoring and marking of student assignments and exam papers.</li>
+            <li>Led lab sessions covering relational database design, normalization, and SQL query optimization.</li>
+            <li>Assisted students with ER modeling, schema design, and writing complex queries in MySQL.</li>
+            <li>Graded assignments and exams, providing constructive feedback on database design and query efficiency.</li>
           </ul>
         </div>
         <div class="exp-divider"></div>
@@ -266,9 +266,9 @@
           <p class="exp-sub-title">COMP 2540 — Data Structures and Algorithms</p>
           <p class="exp-sub-date">Jan 2023 — Apr 2023 &nbsp;·&nbsp; Sep 2023 — Dec 2023</p>
           <ul>
-            <li>Guided students through data structures including linked lists, binary trees, stacks, queues, hash tables, and maps.</li>
-            <li>Helped students understand time/space complexity, algorithm design, and pseudocode principles.</li>
-            <li>Supervised labs, proctored exams, and marked coursework alongside the professor and TA team.</li>
+            <li>Led weekly lab sessions on algorithmic complexity, recursion, and data structures, helping students write cleaner and more efficient code.</li>
+            <li>Conducted code reviews and debugging sessions, improving student understanding of tree, graph, and sorting algorithm implementations.</li>
+            <li>Held office hours supporting 100+ students through assignment breakdowns and exam prep.</li>
           </ul>
         </div>
         <div class="exp-divider"></div>
@@ -276,9 +276,9 @@
           <p class="exp-sub-title">COMP 2120 — Object Oriented Programming Using Java</p>
           <p class="exp-sub-date">Sep 2022 — Dec 2022</p>
           <ul>
-            <li>Assisted students in understanding OOP concepts and Java programming for assignments and coursework.</li>
-            <li>Helped students overcome common struggles when learning to code in Java.</li>
-            <li>Ran labs, proctored exams, and marked student work with the professor and TA team.</li>
+            <li>Assisted students with core OOP concepts in Java including inheritance, polymorphism, encapsulation, and design patterns.</li>
+            <li>Graded assignments and provided detailed feedback to help students identify gaps in their understanding.</li>
+            <li>Held office hours to support struggling students through debugging and code structure improvements.</li>
           </ul>
         </div>
       </div>
@@ -297,35 +297,17 @@
       <div class="exp-body">
         <div class="exp-sub">
           <ul>
-            <li>Assisted Dr. Luis Rueda in research on image classification and segmentation using superpixel techniques.</li>
-            <li>Built a Python program to cluster image pixels and identify centroids via Euclidean distance.</li>
-            <li>Implemented CNN and Graph CNN models to evaluate their use in superpixel segmentation research.</li>
-            <li>Integrated an SQL server with Snowflake for data querying and processing of superpixel data.</li>
-            <li>Containerized a Python program with Docker to demonstrate scalable virtual environment deployment.</li>
+            <li>Conducted research under Dr. Luis Rueda on Image Segmentation and Superpixels using Python.</li>
+            <li>Engineered an image segmentation pipeline from scratch using KMeans clustering and Euclidean distance calculations to partition images into superpixel regions with configurable overlap.</li>
+            <li>Studied and reproduced hybrid CNN+GNN architecture from published research, implementing SLIC-based superpixel graph construction and a coupled model for image classification</li>
+            <li>Implemented and benchmarked CNN (TensorFlow/sklearn) and GCN (PyTorch Geometric) models, achieving 98% on MNIST and 81% on Cora, comparing classification accuracy across architectures.</li>
+            
           </ul>
         </div>
       </div>
     </div>
 
-    <!-- Volunteer -->
-    <div class="exp-card wow animate__animated animate__fadeInUp">
-      <div class="exp-header" onclick="toggleExp(this)">
-        <div class="exp-header-left">
-          <span class="exp-org">Community Services</span>
-          <span class="exp-role">Security Guard</span>
-          <span class="exp-date">May 2019 — Jun 2019</span>
-        </div>
-        <span class="exp-toggle">+</span>
-      </div>
-      <div class="exp-body">
-        <div class="exp-sub">
-          <ul>
-            <li>Worked within a security team to manage parking lot traffic flow during evening events.</li>
-            <li>Followed operational instructions to ensure a safe, incident-free environment each night.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    
 
   </div>
 
@@ -378,7 +360,7 @@
 
       <!-- Blog Platform - full width -->
       <div class="proj-card wow animate__animated animate__zoomIn" style="grid-column: 1 / -1;">
-        <p class="proj-name">Full-Stack Blog Platform</p>
+        <p class="proj-name">Khan's Blog Platform</p>
         <p class="proj-desc">Deployed on AWS using Elastic Beanstalk (backend), RDS PostgreSQL (database), and S3 + CloudFront (frontend CDN) with unified HTTPS delivery. Implemented JWT authentication with role-based access control restricting category/tag management to admins and post editing to authors. Built a rich text editing experience using TipTap with DOMPurify sanitization.</p>
         <div class="proj-stack">
           <span>Java</span><span>Node.js</span><span>Spring Boot</span><span>Spring Security</span><span>Maven</span><span>React</span><span>TypeScript</span><span>PostgreSQL</span><span>Docker</span><span>AWS</span><span>Amazon CloudFront</span><span>Amazon S3</span><span>Amazon RDS</span><span>Amazon Elastic Beanstalk</span>
@@ -391,7 +373,7 @@
 
       <!-- AI Resume Tailoring - full width -->
       <div class="proj-card wow animate__animated animate__zoomIn" style="grid-column: 1 / -1;">
-        <p class="proj-name">AI Resume Tailoring</p>
+        <p class="proj-name">AdaptIQ</p>
         <p class="proj-desc">Full‑stack AI resume tailoring tool using a single‑pass LLM pipeline for keyword extraction and ATS optimization.
           Implemented real‑time SSE streaming to show live backend processing stages instead of a fake progress timer.
           Designed a 5‑metric ATS scoring engine evaluating parsing ability, keyword coverage, quantification rate, and job match quality.</p>
@@ -434,6 +416,18 @@
         </div>
       </div>
 
+      <!-- Autofill Assistant Chrome Extension -->
+      <div class="proj-card wow animate__animated animate__zoomIn">
+        <p class="proj-name">SwiftFill</p>
+        <p class="proj-desc">A Chrome extension that autofills repetitive fields on job application platforms like Workday and Greenhouse. Supports application, sign up, and login modes with configurable profile data.</p>
+        <div class="proj-stack">
+          <span>JavaScript</span><span>Chrome Extensions API</span>
+        </div>
+        <div class="proj-links">
+          <a class="proj-link" href="https://github.com/MUmarKhan02/SwiftFill">GitHub ↗</a>
+        </div>
+      </div>
+
       <!-- File Conversion Tool -->
       <div class="proj-card wow animate__animated animate__zoomIn">
         <p class="proj-name">File Conversion Tool</p>
@@ -452,14 +446,27 @@
       <!-- GitHub Repo Analyzer -->
       <div class="proj-card wow animate__animated animate__zoomIn">
         <p class="proj-name">GitHub Repository Analyzer</p>
-        <p class="proj-desc">A tool for analyzing GitHub repositories, providing insights into code quality, contribution patterns, and development metrics.
-          Built with C# and ASP.NET Core MVC, the application features a clean interface for repository selection and analysis.
-          Integrated with the GitHub API to fetch repository data and generate comprehensive reports.</p>
+        <p class="proj-desc">A CLI tool for analyzing GitHub repositories and generating detailed Markdown and HTML reports. 
+          Built with C# and .NET 10, the tool queries the GitHub API across 6 dimensions — language breakdown, code metrics, README quality scoring, dependency detection, git activity, and an overall health summary.</p>
         <div class="proj-stack">
-          <span>C#</span><span>ASP.NET 10</span><span>Octokit</span>
+          <span>C#</span><span>.NET 10</span><span>Octokit</span>
         </div>
         <div class="proj-links">
           <a class="proj-link" href="https://github.com/MUmarKhan02/GitHub-Repo-Analyzer">GitHub ↗</a>
+        </div>
+      </div>
+      <!-- Gmail Job-Monitor -->
+      <div class="proj-card wow animate__animated animate__zoomIn">
+        <p class="proj-name">Gmail Job Monitor</p>
+        <p class="proj-desc">Built a local Gmail monitoring tool that authenticates via Google OAuth2 and scans thousands of emails across 
+          multiple accounts to automatically classify job-related activity — interviews, offers, rejections, recruiter outreach, 
+          and application confirmations. Uses sender-domain overrides and weighted keyword scoring for accurate classification, 
+          stores results in SQLite, and exports a structured text report. Installable as a global CLI command with zero cloud dependencies</p>
+        <div class="proj-stack">
+          <span>Python</span><span>Typer</span><span>Rich</span><span>Gmail API</span><span>SQLite</span><span>Google OAuth2</span><span>Setuptools</span>
+        </div>
+        <div class="proj-links">
+          <a class="proj-link" href="https://github.com/MUmarKhan02/Gmail-Job-Monitor">GitHub ↗</a>
         </div>
       </div>
 
